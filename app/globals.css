@@ -10,14 +10,47 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-bevietnam: var(--font-be-vietnam);
+  --font-outfit: var(--font-outfit);
+  --color-purple: oklch(62.3% 0.17 296.8);
+  --color-green: oklch(76.2% 0.176 142.1);
+  --color-lavender: oklch(62.3% 0.150 311.2);
+  --color-darkpurple: oklch(70.9% 0.124 286.8);
+  
 }
 
-@media (prefers-color-scheme: dark) {
+
+@layer utilities {
+  .animate-marquee {
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+} */
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   background: var(--background);
