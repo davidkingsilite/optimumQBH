@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,9 +19,31 @@
   --color-green: oklch(76.2% 0.176 142.1);
   --color-lavender: oklch(62.3% 0.150 311.2);
   --color-darkpurple: oklch(70.9% 0.124 286.8);
-  
+  /* Define custom animation keyframes */
+  --animation-keyframes-fade-out: {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+  };
+  --animation-keyframes-zoom-in: {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+  };
+  --animation-keyframes-pulse: {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.1); }
+  };
+
+  /* Define custom animations using the keyframes */
+  --animation-fade-out: fade-out 0.5s ease-in-out forwards;
+  --animation-zoom-in: zoom-in 1s ease-in-out forwards;
+  --animation-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@layer utilities {
+  .clip-diamond-shape {
+    clip-path: var(--clip-path-diamond-shape);
+  }
+}
 
 @layer utilities {
   .animate-marquee {

@@ -22,24 +22,25 @@ export default function Navbar() {
     <header className="w-full z-50 sticky top-0 bg-white shadow-sm">
       <nav className="max-w-7xl mx-auto flex md:justify-between sm:justify-between items-center py-6 px-4 sm:px-6 lg:px-8 h-20 relative">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 relative">
-          <div>
-            <Image 
-              src="/OQBH_logo.png"
-              alt='logo'
-              width={140}
-              height={120}
-              className='rounded-full h-full w-full object-fit'
-            >
-
-            </Image>
-          </div>
-          {/* <div className="text-left">
-            <h1 className="font-outfit text-[24px]">
-              Optimum Psychiatry
-            </h1>
-          </div> */}
-        </Link>
+     <Link href="/" className="flex items-center gap-2 relative">
+      <div
+        className="
+          relative 
+          w-20 h-20        /* Small screens */
+          sm:w-24 sm:h-24  /* Tablets */
+          md:w-28 md:h-28  /* Laptops */
+          lg:w-32 lg:h-32  /* Desktops */
+        "
+      >
+        <Image
+          src="/OQBH_logo.png"
+          alt="logo"
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
+    </Link>
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex gap-6 font-bevietnam">

@@ -20,21 +20,16 @@ type NavLink = {
     },
     {
         id: 3,
-        title: "Projects",
-        url: "/projects"
-    },
-    {
-        id: 4,
         title: "Blog",
         url: "/blog"
     },
     {
-        id: 5,
+        id: 4,
         title: "Contact",
         url: "/contact"
     },
     {
-      id: 6,
+      id: 5,
       title: "About-us",
       url: "/about"
   },
@@ -44,6 +39,7 @@ type NavLink = {
     id: number;
     title: string;
     slug: string;
+    exerpt: string;
     description: string;
     image: string;
   }
@@ -51,15 +47,17 @@ type NavLink = {
   export const services: Service[] = [
     {
       id: 1,
-      title: "Psychotherapy",
-      slug: "psychotherapy",
-      description: "Personalized talk therapy for emotional and mental wellness.",
-      image: "/services/psychotherapy.jpg",
+      title: "Anxiety",
+      slug: "Anxiety",
+      exerpt:"Welcome to a haven of tranquility and empowerment on your journey to conquer Anxiety.",
+      description: "Welcome to a haven of tranquility and empowerment on your journey to conquer Anxiety. At optimum Quality Behavioral Health , we specialize in crafting personalized strategies to help you reclaim control and embrace a calmer existence. Our services go beyond traditional approaches, incorporating therapeutic techniques, stress-reducing practices, and targeted interventions to address the root of your anxiety. Together, let’s rewrite the script—transforming fear into resilience and uncertainty into unwavering confidence. Take a leap towards a life marked by serenity and newfound strength. Because in this space, your peace of mind takes precedence.",
+      image: "/",
     },
     {
       id: 2,
       title: "Telepsychiatry",
       slug: "telepsychiatry",
+      exerpt: "",
       description: "Virtual psychiatric care from the comfort of your home.",
       image: "/services/telepsychiatry.jpg",
     },
@@ -67,6 +65,7 @@ type NavLink = {
       id: 3,
       title: "Medication Management",
       slug: "medication-management",
+      exerpt: "",
       description: "Safe and effective psychiatric medication oversight.",
       image: "/services/medication.jpg",
     },
