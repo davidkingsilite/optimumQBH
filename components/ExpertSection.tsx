@@ -28,7 +28,7 @@ export default function ExpertSection() {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-1 gap-20 items-center">
-          {experts.map((expert, index) => (
+          {experts.map((expert) => (
             <div key={expert.name} className="flex flex-col md:flex-row gap-6">
               {/* Left Side - Image with backgrounds */}
               <div className="relative flex justify-center items-center w-full md:w-1/2">  

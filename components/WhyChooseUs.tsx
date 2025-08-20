@@ -3,7 +3,7 @@
 
 import Image from 'next/image';
 import { CheckCircleIcon } from '@heroicons/react/24/solid'; // Using Heroicons for icons
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter} from 'next/navigation';
 
 
 interface FeatureItem {

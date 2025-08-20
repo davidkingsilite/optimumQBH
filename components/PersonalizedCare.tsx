@@ -1,4 +1,5 @@
 // src/components/ServicesSection.tsx
+import Image from 'next/image';
 import React from 'react';
 
 // Data for the service cards
@@ -9,7 +10,7 @@ const servicesData = [
     icon: (
       // Placeholder for a brain icon
      
-      <img src="icons/family.png" alt="Adults & Child Psychiatry" />
+      <Image src="icons/family.png" alt="Adults & Child Psychiatry" />
     ),
   },
   {
@@ -17,7 +18,7 @@ const servicesData = [
     description: 'Secure virtual appointments for patients who prefer the convenience of remote care, without compromising quality.',
     icon: (
       // Placeholder for a phone/telehealth icon
-      <img src="/icons/doctor.png" alt="telehealth" />
+      <Image src="/icons/doctor.png" alt="telehealth" />
       
     ),
   },
@@ -26,7 +27,7 @@ const servicesData = [
     description: 'Carefully monitored prescriptions personalized to your evolving needs, rooted in trust, safety, and transparency.',
     icon: (
       // Placeholder for a pills bottle icon
-      <img src="/icons/antidepressants (1).png" alt="Medication management" />
+      <Image src="/icons/antidepressants (1).png" alt="Medication management" />
       
     ),
   },
@@ -47,7 +48,7 @@ export default function PersonalizedCare() {
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-dark-gray mb-4 leading-tight">
             PERSONALIZED MENTAL HEALTH CARE <br />
-            That's as Unique as You.
+            That&apos;s as Unique as You.
           </h2>
           <p className="text-lg sm:text-xl text-medium-gray max-w-3xl mx-auto">
             At Optimum Quality Behaviour Health Psychiatry, we offer more than treatment; we offer compassion. Our services are designed to meet you where you are, with flexible care options and thoughtful, evidence-based support.

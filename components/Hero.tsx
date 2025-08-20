@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-creative';
 import React from 'react';
+import Image from 'next/image';
 
 // Sample data for your slides
 const slides = [
@@ -54,7 +55,7 @@ const Hero: React.FC = () => {
                 className={`flex relative w-full h-full transition-all duration-1000 ease-in-out
                             ${isActive ? 'animate-zoom-in' : ''}`}
               >
-                <img
+                <Image
                   src={slide.image}
                   alt={slide.alt}
                   className="w-full h-full object-cover"
