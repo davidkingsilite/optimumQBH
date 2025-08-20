@@ -22,27 +22,27 @@ export default function FooterNewsletter() {
     setMessage('');
 
 
-    try {
-      const res = await fetch('/api/newsletter', {
-        method: 'POST',
-        body: JSON.stringify({ email }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+    // try {
+    //   const res = await fetch('/api/newsletter', {
+    //     method: 'POST',
+    //     body: JSON.stringify({ email }),
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //   });
         
-      const data = await res.json();
+    //   const data = await res.json();
 
-      if (res.ok) {
-        setStatus('success');
-        setEmail('');
-        setMessage(data.message); // Message like "Already subscribed"
-      } else throw new Error(data.message || 'something went wrong');
-    } catch (err: unknown) {
-      const error = err as Error;
-      setStatus('error');
-      setMessage(error.message || 'Error submitting email');
-    }    
+    //   if (res.ok) {
+    //     setStatus('success');
+    //     setEmail('');
+    //     setMessage(data.message); // Message like "Already subscribed"
+    //   } else throw new Error(data.message || 'something went wrong');
+    // } catch (err: unknown) {
+    //   const error = err as Error;
+    //   setStatus('error');
+    //   setMessage(error.message || 'Error submitting email');
+    // }    
   };
 
   return (

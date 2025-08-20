@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { Facebook, Twitter, Github, Linkedin } from 'lucide-react';
-// import FooterNewsletter from './FooterNewsletter';
+import Image from 'next/image';
+import FooterNewsletter from './FooterNewsletter';
 
 export default function Footer() {
   return (
@@ -11,8 +12,27 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between gap-6">
           {/* Logo / Branding */}
           <div>
-            <h2 className="text-xl font-bold text-white p-1">ILITE.DEV</h2>
-            <p className="text-sm text-gray-400 p-1">Building web experiences with modern tools.</p>
+                {/* Logo */}
+     <Link href="/" className="flex items-center relative">
+      <div
+        className="
+          relative 
+          w-20 h-20        /* Small screens */
+          sm:w-24 sm:h-24  /* Tablets */
+          md:w-28 md:h-28  /* Laptops */
+          lg:w-32 lg:h-32  /* Desktops */
+        "
+      >
+        <Image
+          src="/OQBH_logo.png"
+          alt="logo"
+          fill
+          className="object-contain rounded-full"
+          priority
+        />
+      </div>
+    </Link>
+            <p className="text-sm text-gray-400 p-1">At Optimum Quality Behavioral Health, we are committed to delivering top-tier services for our patients.</p>
           </div>
 
           <div className="mx-0 flex flex-col md:flex-row gap-8 lg:gap-16 p-4 text-nowrap">
@@ -40,7 +60,7 @@ export default function Footer() {
         {/* Newsletter */}
         <div className="">
           <h3 className="font-semibold pb-4">Newsletter</h3>
-          {/* <FooterNewsletter /> */}
+          <FooterNewsletter />
         </div>
       </div>
 
@@ -63,7 +83,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} ILITE.dev — All rights reserved.
+          &copy; {new Date().getFullYear()} Optimum Quality Behavioral Health — All rights reserved.
         </div>
       </div>
     </footer>
