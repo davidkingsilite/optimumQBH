@@ -19,8 +19,8 @@ const ServiceList = () => {
           <ServiceCard key={service.id} service={service} />
         ))}
       </div>
-      <button className='mt-5 ml-2 px-6 py-3 border border-black text-white rounded bg-purple' onClick={() => router.push('/services')}>
-         See More
+      <button className='mt-10 ml-2 px-6 py-3 border border-black text-white rounded bg-purple hover:bg-green' onClick={() => router.push('/services')}>
+         See All Services
       </button>
     </section>
   );

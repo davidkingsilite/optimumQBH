@@ -6,6 +6,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import ExpertSection from "@/components/ExpertSection";
 import InsuranceSection from "@/components/Insurance&payment";
 import ServiceList from "@/components/ServicesList";
+import FormSection from "@/components/FormSection";
 
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <ServiceList />
       <ExpertSection />
       <InsuranceSection />
+      <FormSection />
     </div>
     </main>
   )

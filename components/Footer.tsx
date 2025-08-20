@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Facebook, Twitter, Github, Linkedin } from 'lucide-react';
-//import FooterNewsletter from './FooterNewsletter';
+// import FooterNewsletter from './FooterNewsletter';
 
 export default function Footer() {
   return (
