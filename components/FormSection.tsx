@@ -1,8 +1,9 @@
+import HipaaForm from '@/app/(root)/hipaa-form/page'
 import React from 'react'
 
 const FormSection = () => {
   return (
-    <div>FormSection</div>
+    <div><HipaaForm /></div>
   )
 }
 

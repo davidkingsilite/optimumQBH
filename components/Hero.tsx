@@ -58,6 +58,7 @@ const Hero: React.FC = () => {
                 <Image
                   src={slide.image}
                   alt={slide.alt}
+                  fill
                   className="w-full h-full object-cover"
                 />
                

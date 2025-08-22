@@ -8,34 +8,50 @@ const servicesData = [
     title: 'Adult & Child Psychiatry',
     description: 'Managing complex mental health concerns with compassion, clinical expertise, and a long-term commitment to care.',
     icon: (
-      // Placeholder for a brain icon
-     
-      <Image src="icons/family.png" alt="Adults & Child Psychiatry" />
-    ),
+      <div className="relative w-16 h-16">
+      <Image
+        src="/icons/family.png"
+        alt="Adults & Child Psychiatry"
+        fill
+        className="object-contain"
+      />
+    </div>
+      ),
   },
   {
     title: 'Telepsychiatry',
     description: 'Secure virtual appointments for patients who prefer the convenience of remote care, without compromising quality.',
     icon: (
-      // Placeholder for a phone/telehealth icon
-      <Image src="/icons/doctor.png" alt="telehealth" />
-      
+      <div className="relative w-16 h-16">
+        <Image
+          src="/icons/doctor.png"
+          alt="telehealth"
+          fill
+          className="object-contain"
+        />
+      </div>   
     ),
   },
   {
     title: 'Medication Management',
     description: 'Carefully monitored prescriptions personalized to your evolving needs, rooted in trust, safety, and transparency.',
     icon: (
-      // Placeholder for a pills bottle icon
-      <Image src="/icons/antidepressants (1).png" alt="Medication management" />
-      
+      <div className="relative w-16 h-16">
+      <Image
+        src="/icons/antidepressants (1).png"
+        alt="Medication management"
+        fill
+        className="object-contain"
+      />
+    </div>
+
     ),
   },
 ];
 
 const ServiceCard = ({ title, description, icon }: { title: string; description: string; icon: React.ReactNode; }) => (
   <div className="flex flex-col items-center text-center p-8 bg-white rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100">
-    <div className="w-16 h-16 mb-4">{icon}</div>
+    <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-semibold text-primary-purple mb-2 text-lavender">{title}</h3>
     <p className="text-medium-gray">{description}</p>
   </div>

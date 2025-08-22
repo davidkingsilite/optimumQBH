@@ -6,16 +6,16 @@ type Insurance = {
 };
 
 const insurances: Insurance[] = [
-  { name: "Oscar", logo: "/images/insurances/oscar.png" },
-  { name: "Oxford Life Insurance", logo: "/images/insurances/oxford.png" },
-  { name: "United Healthcare", logo: "/images/insurances/united.png" },
-  { name: "Carelon", logo: "/images/insurances/carelon.png" },
-  { name: "Horizon", logo: "/images/insurances/horizon.png" },
-  { name: "BlueCross BlueShield of Illinois", logo: "/images/insurances/bcbs-illinois.png" },
-  { name: "Massachusetts", logo: "/images/insurances/massachusetts.png" },
-  { name: "Independence Blue Cross", logo: "/images/insurances/independence.png" },
-  { name: "Aetna", logo: "/images/insurances/aetna.png" },
-  { name: "Cigna", logo: "/images/insurances/cigna.png" },
+  { name: "Oscar", logo: "/insurance/oscar.png" },
+  { name: "Oxford Life Insurance", logo: "/insurance/oxford-life-ins.png" },
+  { name: "United Healthcare", logo: "/insurance/united-health.png" },
+  { name: "Carelon", logo: "/insurance/carelon.png" },
+  { name: "Horizon", logo: "/insurance/horizon.png" },
+  { name: "BlueCross BlueShield of Illinois", logo: "/insurance/bluecross-blue-shield-illinois.png" },
+  { name: "Massachusetts", logo: "/insurance/bluecross-blue-shield-massachusetts.png" },
+  { name: "Independence Blue Cross", logo: "/insurance/independent-blue-cross.png" },
+  { name: "Aetna", logo: "/insurance/aetna.png" },
+  { name: "Cigna", logo: "/insurance/cigna.png" },
 ];
 
 export default function InsuranceSection() {
@@ -39,8 +39,8 @@ export default function InsuranceSection() {
               <Image
                 src={insurance.logo}
                 alt={insurance.name}
-                width={150}
-                height={80}
+                width={130}
+                height={60}
                 className="object-contain"
               />
             </div>
